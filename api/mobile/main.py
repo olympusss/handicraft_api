@@ -22,3 +22,8 @@ app.include_router(profile_router,        tags=["Profile"])
 app.include_router(filter_router,         tags=["Filter"])
 app.include_router(holiday_router,        tags=["Holiday"])
 app.include_router(constant_router,       tags=["Constant"])
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True, debug=False)
