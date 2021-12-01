@@ -26,4 +26,4 @@ app.include_router(constant_router,       tags=["Constant"])
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True, debug=False)
+    uvicorn.run("main:app", host="localhost", port=8000, reload=True, debug=False)
